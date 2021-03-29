@@ -1,7 +1,10 @@
 <?php
 
+require('vendor/autoload.php');
 
-require('vendor/autoload.php')
+//namespace App\Models\UserData;
+
+use App\Models\User;
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 
@@ -26,6 +29,6 @@ $capsule->bootEloquent();
 
 
 
-$user = User::find(1);
+$user = App\Models\User::find(1);
 
 var_dump($user);
