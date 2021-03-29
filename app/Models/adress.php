@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 class Address extends Model {
-    protected $table ="adresses";
+    protected $table ="addresses";
     public $timestamps = false;
     protected $fillable = ['user_id', 'name', 'description'];
 

@@ -29,6 +29,8 @@ $capsule->bootEloquent();
 
 
 
-$user = App\Models\User::find(1);
+//$user = App\Models\User::find(1);
+
+$user = User::find(1);
 
 var_dump($user);
